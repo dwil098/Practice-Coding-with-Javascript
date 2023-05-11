@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Name Display</title>
+</head>
+<body>
+  <label for="name-input">Enter your name:</label>
+  <input type="text" id="name-input">
+  <div id="name-display">Hello</div>
+  
+  <script>
+var inputBox = document.getElementById("name-input");
+
+inputBox.onkeyup = function(){
+    document.getElementById("name-display").innerHTML = inputBox.value;
+
+}
+  </script>
+</body>
+</html>
